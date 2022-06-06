@@ -1,0 +1,24 @@
+{
+  "name": "f1-fantasy-tracker",
+  "version": "1.0.0",
+  "description": "App in which you can see in more detail the standings of a certain f1 fantasy league",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "db:create": "node ./db/create.js",
+    "build": "cd client && npm install && npm run build",
+    "start": "node index.js"
+  },
+  "author": "Juho Ryhtä",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "knex": "^2.1.0",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
